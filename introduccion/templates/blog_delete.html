@@ -1,0 +1,8 @@
+Are you sure?
+<form method="POST">
+    <!--para que funcione un formulario hay que agregar un
+    token csrf-->
+    {% csrf_token %}
+    {{form}}
+    <button  type="submit">Delete</button>
+</form>
